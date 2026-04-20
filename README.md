@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fractional Knapsack Problem Solver
 
 A full-stack application for solving the Fractional Knapsack Problem with a React frontend and Python Flask backend.
@@ -147,3 +148,7 @@ The solution uses a **greedy approach**:
   ]
 }
 ```
+=======
+# knapsack-solver
+Interactive Fractional Knapsack Problem solver with React frontend and Python Flask backend.  Features greedy algorithm implementation, clean UI with real icons, and responsive design.
+>>>>>>> b909d338b407dba636b16016265e8e42977fe613
