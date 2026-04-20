@@ -1,0 +1,100 @@
+.solution {
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat {
+  background-color: #f8f8f6;
+  color: #4a4a48;
+  padding: 20px 16px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e8e8e6;
+  transition: all 0.2s ease;
+}
+
+.stat:hover {
+  background-color: #ffffff;
+  border-color: #d8d8d6;
+}
+
+.stat .label {
+  display: block;
+  font-size: 0.8em;
+  color: #9a9a98;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.stat .value {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #4a4a48;
+}
+
+.solution-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.solution-table th,
+.solution-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e6;
+}
+
+.solution-table th {
+  background-color: #f8f8f6;
+  font-weight: 600;
+  color: #7a7a78;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.solution-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.solution-table tbody tr:hover {
+  background-color: #f8f8f6;
+}
+
+.solution-table td {
+  color: #4a4a48;
+  font-size: 0.95em;
+}
+
+.fraction-badge {
+  background-color: #fffaf0;
+  color: #a67c52;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85em;
+  border: 1px solid #e8dcc8;
+  display: inline-block;
+}
+
+.fraction-full {
+  background-color: #f0faf8;
+  color: #52a689;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85em;
+  border: 1px solid #c8e8e0;
+  display: inline-block;
+}

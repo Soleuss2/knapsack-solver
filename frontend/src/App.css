@@ -1,0 +1,233 @@
+/* App component specific styles */
+
+/* Header styling */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e6;
+  padding: 28px 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #4a4a48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header h1 svg {
+  width: 28px;
+  height: 28px;
+}
+
+.header p {
+  margin: 0;
+  color: #9a9a98;
+  font-size: 0.95em;
+}
+
+/* Main layout */
+.app {
+  min-height: 100vh;
+  background-color: #fafaf8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 48px 24px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-section h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #4a4a48;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-section h2 svg {
+  width: 20px;
+  height: 20px;
+  color: #7a7a78;
+}
+
+.input-section h3 {
+  margin: 16px 0 12px 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: #7a7a78;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 0.85em;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #7a7a78;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #d8d8d6;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-size: 0.95em;
+  color: #4a4a48;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #b8b8b5;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(74, 74, 72, 0.05);
+}
+
+/* Items list */
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e6;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  font-size: 0.95em;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: none;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-primary {
+  background-color: #4a4a48;
+  color: #ffffff;
+  width: 100%;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2a2a28;
+  box-shadow: 0 4px 12px rgba(74, 74, 72, 0.15);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #f8f8f6;
+  color: #4a4a48;
+  border: 1px solid #d8d8d6;
+  width: 100%;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  border-color: #b8b8b5;
+}
+
+/* Error message */
+.error-message {
+  background-color: #fff5f5;
+  border: 1px solid #e8c8c8;
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #c53030;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error-message svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Output section */
+.output-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Placeholder */
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: #ffffff;
+  border: 2px dashed #d8d8d6;
+  border-radius: 8px;
+  padding: 48px 24px;
+  text-align: center;
+  min-height: 300px;
+  color: #9a9a98;
+}
+
+.placeholder svg {
+  width: 48px;
+  height: 48px;
+  color: #b8b8b5;
+  opacity: 0.6;
+}
+
+.placeholder p {
+  margin: 0;
+  font-size: 1em;
+  color: #9a9a98;
+}
